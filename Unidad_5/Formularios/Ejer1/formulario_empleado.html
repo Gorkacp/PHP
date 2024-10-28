@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Empleado</title>
+    <style>
+        /* Estilos básicos para alinear los elementos */
+        label, input[type="checkbox"], input[type="radio"] {
+            margin: 5px 0;
+            display: inline-block;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulario de Registro de Empleado</h2>
+    <form action="procesar_empleado.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <!-- Grupo de checkboxes para lenguajes de programación -->
+        <div class="checkbox-group">
+            <label>¿Qué lenguajes de programación conoces?:</label>
+            <input type="checkbox" name="lenguajes[]" value="C++"> C++
+            <input type="checkbox" name="lenguajes[]" value="JavaScript"> JavaScript
+            <input type="checkbox" name="lenguajes[]" value="PHP"> PHP
+            <input type="checkbox" name="lenguajes[]" value="Python"> Python
+        </div>
+
+        <!-- Grupo de radios para páginas estáticas -->
+        <div class="radio-group">
+            <label>¿Sabes crear páginas estáticas?</label>
+            <input type="radio" name="paginas_estaticas" value="Si" required> Sí
+            <input type="radio" name="paginas_estaticas" value="No"> No
+        </div>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios"></textarea><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br>
+
+        <label for="repetir_contrasena">Repetir Contraseña:</label>
+        <input type="password" id="repetir_contrasena" name="repetir_contrasena" required><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>

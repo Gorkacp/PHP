@@ -1,0 +1,13 @@
+<empleados>
+    <empleado>
+        <nombre>Juan</nombre>
+        <apellidos>Pérez</apellidos>
+        <fecha_nacimiento>1980-05-15</fecha_nacimiento>
+        <correo>juan.perez@example.com</correo>
+        <lenguajes>C++, PHP</lenguajes>
+        <paginas_estaticas>Si</paginas_estaticas>
+        <comentarios>Sin comentarios</comentarios>
+        <telefono></telefono>
+        <codigo_postal></codigo_postal>
+    </empleado>
+</empleados>
