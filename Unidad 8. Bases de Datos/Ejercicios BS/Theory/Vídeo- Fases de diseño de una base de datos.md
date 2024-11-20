@@ -1,0 +1,1 @@
+Haga clic en el enlace Vídeo: [Fases de diseño de una base de datos](https://youtu.be/HouTrlFc6Qw?si=7vPtogQv8vly9wQ7) para abrir el recurso.
